@@ -1,0 +1,18 @@
+@import './reset.scss';
+@import './variable.scss';
+@import './mixsin.scss';
+.container{
+    background-color: aqua;
+   max-width:$container-width;
+  
+}
+@media(width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+
+.btn{
+    @include button-style;
+    padding: 5px;
+}

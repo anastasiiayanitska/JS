@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: aqua;
+  max-width: 960px;
+}
+
+@media (width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.btn {
+  background-color: #5e69ee;
+  color: white;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

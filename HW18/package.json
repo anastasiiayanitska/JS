@@ -1,0 +1,16 @@
+{
+  "name": "15_08",
+  "version": "1.0.0",
+  "description": "HELLO",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "node script.js",
+    "sass": "sass styles/style.scss dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
