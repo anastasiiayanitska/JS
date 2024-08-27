@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todo">
+      <div class="header_group">
+        <h2 class="main_header">Среда</h2>
+        <p class="header_group_subheader">7 августа</p>
+      </div>
+      <div class="search_field">
+        <input type="text" class="search_field_input" placeholder="Поиск" />
+        <span class="search_field_icon material-symbols-rounded"> search </span>
+      </div>
+      <button class="float_button">
+        <span class="material-symbols-rounded"> edit </span>
+      </button>
+      <h2 class="todo_title"> Новая запись</h2>
+      <form action="" class="create_form" id="create_form">
+        <input
+          type="text"
+          class="create_form_input"
+          placeholder="Description"
+          name="description"
+          id="description"
+          required
+        />
+        <input
+          type="date"
+          class="create_form_input"
+          placeholder="Date"
+          name="startDate"
+          id="startDate"
+          required
+        />
+        <div class="form_buttons_wrapper">
+          <button class="form_button form_button_primary" type="submit">
+            Добавить
+          </button>
+          <button class="form_button form_button_secondary" type="reset">
+            Очистить
+          </button>
+        </div>
+      </form>
+
+      <h2 class="todo_title">Список дел</h2>
+      <div class="split_button">
+        <button
+          class="split_button_button split_button_button_active"
+          id="filter_all"
+                  onclick="splitButtonClickHandler(this)">
+          <span class="material-symbols-rounded split_button_button_icon">
+            check
+          </span>
+          Все
+        </button>
+        <button
+          class="split_button_button split_button_button_center"
+          id="filter_active"
+                 onclick="splitButtonClickHandler(this)" >
+          <span class="material-symbols-rounded split_button_button_icon">
+            check
+          </span>
+          Активные
+        </button>
+        <button
+          class="split_button_button"
+          id="filter_done"
+                 onclick="splitButtonClickHandler(this)" >
+          <span class="material-symbols-rounded split_button_button_icon">
+            check
+          </span>
+          Готовые
+        </button>
+      </div>
+
+
+      <ul class="todo_list" id="todo_list">
+        <li class="todo_block">
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" name="checkbox" />
+            <span class="material-symbols-rounded checkbox_check_icon">
+              check </span>
+          </label>
+          <div class="todo_block_data">
+            <p class="todo_block_date">8 августа</p>
+            <h3 class="todo_block_title">Покормить кошку</h3>
+          </div>
+        </li>
+        <li class="todo_block">
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" name="checkbox" />
+            <span class="material-symbols-rounded checkbox_check_icon">
+              check </span>
+          </label>
+          <div class="todo_block_data">
+            <p class="todo_block_date">8 августа</p>
+            <h3 class="todo_block_title">Покормить кошку</h3>
+          </div>
+        </li>
+        <li class="todo_block">
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" name="checkbox" />
+            <span class="material-symbols-rounded checkbox_check_icon">
+              check </span>
+          </label>
+          <div class="todo_block_data">
+            <p class="todo_block_date">8 августа</p>
+            <h3 class="todo_block_title">Покормить кошку</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
